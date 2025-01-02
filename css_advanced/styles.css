@@ -5,7 +5,6 @@ body, html {
   height: 100%;
 }
 
-/* Define SourceSansPro-Boldlt */
 @font-face {
   font-family: "SourceSansPro";
   src: url("Source/SourceSansPro-Boldlt.otf") format("opentype");
@@ -13,7 +12,6 @@ body, html {
   font-style: normal;
 }
 
-/* Define SourceSansPro-ExtraLight */
 @font-face {
   font-family: "SourceSansPro";
   src: url("Source/SourceSansPro-ExtraLight.otf") format("opentype");
@@ -21,7 +19,6 @@ body, html {
   font-style: normal;
 }
 
-/* Define SourceSansPro-Regular */
 @font-face {
   font-family: "SourceSansPro";
   src: url("Source/SourceSansPro-Regular.otf") format("opentype");
@@ -29,7 +26,6 @@ body, html {
   font-style: normal;
 }
 
-/* Define SourceSansPro-Light */
 @font-face {
   font-family: "SourceSansPro";
   src: url("Source/SourceSansPro-Light.otf") format("opentype");
@@ -37,7 +33,6 @@ body, html {
   font-style: normal;
 }
 
-/* Define SourceSansPro-Semibold */
 @font-face {
   font-family: "SourceSansPro";
   src: url("Source/SourceSansPro-Semibold.otf") format("opentype");
@@ -45,7 +40,6 @@ body, html {
   font-style: normal;
 }
 
-/* Apply the font to body or specific elements */
 body {
   font-family: "SourceSansPro";
 }
@@ -66,28 +60,28 @@ p {
 }
 
 .banner-container {
-  background-image: url('images/Object.png'); /* Use the correct path to your image */
-  background-size: cover; /* Ensure the image covers the entire container */
-  background-position: center; /* Center the image */
-  height: 1093px; /* Combined height of the two sections */
-  width: 1440px; /* Full width of the container */
-  display: flex; /* To allow content alignment */
+  background-image: url('images/Object.png'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 1093px; 
+  width: 1440px; 
+  display: flex;
   background-repeat: no-repeat;
   align-items: center;
   position: absolute;
   max-height: 3718px;
   flex-shrink: 0;
-  flex-direction: column; /* Stack header and section vertically */
+  flex-direction: column; 
 }
 
 header {
   width: 1440px;
-  height: 29.46px; /* Height of the header section */
+  height: 29.46px; 
   display: flex;
-  justify-content: space-between; /* Logo on the left, links on the right */
+  justify-content: space-between; 
   align-items: center;
-  color: white; /* Text color for contrast */
-  padding: 0 20px; /* Add some padding for spacing */
+  color: white; 
+  padding: 0 20px; 
   box-sizing: border-box;
 }
 
@@ -97,11 +91,11 @@ header {
   height: 100%; 
 }
 
-/* Navigation styling */
+
 nav ul {
   list-style: none;
-  display: flex; /* Align links horizontally */
-  gap: 20px; /* Spacing between links */
+  display: flex; 
+  gap: 20px; 
   margin: 0;
   padding: 0;
   margin-top: 40px;
@@ -111,66 +105,64 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  font-size: 12px; /* Adjust font size */
-  color: white; /* Adjust to your preferred color */
+  font-size: 12px; 
+  color: white; 
   font-weight: bold;
 }
 
-/* Hero section */
 .hero {
   position: relative;
-  top: 220px; /* Distance from the top edge */
-  width: 1440px; /* Full width */
-  text-align: center; /* Center-align content */
-  color: white; /* Text color for contrast */
+  top: 220px; 
+  width: 1440px; 
+  text-align: center; 
+  color: white; 
 }
 
 /* Title styling */
 .hero h1 {
   font-family: "SourceSansPro";
-  font-size: 120px; /* Title font size */
-  margin: 0; /* Remove default margin */
+  font-size: 120px; 
+  margin: 0; 
   color: #fff;
 }
 
 .hero {
   font-family: "SourceSansPro";
   text-decoration-style: none;
-  top: 220px; /* Distance from the top edge */
-  width: 1440px; /* Full width */
-  text-align: center; /* Center-align content */
-  color: white; /* Text color for contrast */
+  top: 220px; 
+  width: 1440px; 
+  text-align: center; 
+  color: white; 
 }
 
-/* Smile list styling */
+
 .smile-list {
-  display: flex; /* Align items horizontally */
-  justify-content: center; /* Center horizontally */
-  gap: 20px; /* Spacing between items */
-  margin-top: 20px; /* Space below the title */
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+  margin-top: 20px; 
 }
 
 .smile-list span {
-  font-size: 20px; /* Font size for the list */
+  font-size: 20px; 
   font-weight: bold;
   justify-content: center
 }
 
-/* Button styling */
 .hero button {
-  margin-top: 30px; /* Space below the list */
+  margin-top: 30px;
   padding: 10px 20px;
   height: 42px;
   width: 162px;
   font-size: 14px;
   color: white;
-  background-color: rgba(194, 113, 255, 1); /* Button color */
+  background-color: rgba(194, 113, 255, 1);
   border: none;
   border-radius: 21px;
   }
 
 .hero button:hover {
-  opacity: 0.7;/* Darker shade on hover */
+  opacity: 0.7;
   cursor: pointer;
 }
 
@@ -213,7 +205,7 @@ nav ul li a {
 }
 
 .learn-statement .highlight {
-  color: rgba(194, 113, 255, 1); /* Change this color to match your design */
+  color: rgba(194, 113, 255, 1);
   font-weight: bold;
   font-size: 32px;
 }
