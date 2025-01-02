@@ -1,0 +1,691 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Define SourceSansPro-Boldlt */
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("Source/SourceSansPro-Boldlt.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Define SourceSansPro-ExtraLight */
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("Source/SourceSansPro-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Define SourceSansPro-Regular */
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("Source/SourceSansPro-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Define SourceSansPro-Light */
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("Source/SourceSansPro-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Define SourceSansPro-Semibold */
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("Source/SourceSansPro-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Apply the font to body or specific elements */
+body {
+  font-family: "SourceSansPro";
+}
+
+h1 {
+  font-family: "SourceSansPro";
+  font-size: x-large;
+}
+
+ul {
+  font-family: "SourceSansPro";
+  font-weight: 300;
+}
+
+p {
+  font-family: "SourceSansPro";
+  font-weight: 300; /* Use SourceSansPro-Light */
+}
+
+.banner-container {
+  background-image: url('images/Object.png'); /* Use the correct path to your image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  height: 1093px; /* Combined height of the two sections */
+  width: 1440px; /* Full width of the container */
+  display: flex; /* To allow content alignment */
+  background-repeat: no-repeat;
+  align-items: center;
+  position: absolute;
+  max-height: 3718px;
+  flex-shrink: 0;
+  flex-direction: column; /* Stack header and section vertically */
+}
+
+header {
+  width: 1440px;
+  height: 29.46px; /* Height of the header section */
+  display: flex;
+  justify-content: space-between; /* Logo on the left, links on the right */
+  align-items: center;
+  color: white; /* Text color for contrast */
+  padding: 0 20px; /* Add some padding for spacing */
+  box-sizing: border-box;
+}
+
+.logo img {
+  margin-top: 50px;
+  width: auto;
+  height: 100%; 
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  display: flex; /* Align links horizontally */
+  gap: 20px; /* Spacing between links */
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  font-weight: bold;
+  font-family: "SourceSansPro";
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 12px; /* Adjust font size */
+  color: white; /* Adjust to your preferred color */
+  font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  top: 220px; /* Distance from the top edge */
+  width: 1440px; /* Full width */
+  text-align: center; /* Center-align content */
+  color: white; /* Text color for contrast */
+}
+
+/* Title styling */
+.hero h1 {
+  font-family: "SourceSansPro";
+  font-size: 120px; /* Title font size */
+  margin: 0; /* Remove default margin */
+  color: #fff;
+}
+
+.hero {
+  font-family: "SourceSansPro";
+  text-decoration-style: none;
+  top: 220px; /* Distance from the top edge */
+  width: 1440px; /* Full width */
+  text-align: center; /* Center-align content */
+  color: white; /* Text color for contrast */
+}
+
+/* Smile list styling */
+.smile-list {
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center horizontally */
+  gap: 20px; /* Spacing between items */
+  margin-top: 20px; /* Space below the title */
+}
+
+.smile-list span {
+  font-size: 20px; /* Font size for the list */
+  font-weight: bold;
+  justify-content: center
+}
+
+/* Button styling */
+.hero button {
+  margin-top: 30px; /* Space below the list */
+  padding: 10px 20px;
+  height: 42px;
+  width: 162px;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(194, 113, 255, 1); /* Button color */
+  border: none;
+  border-radius: 21px;
+  }
+
+.hero button:hover {
+  opacity: 0.7;/* Darker shade on hover */
+  cursor: pointer;
+}
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.link-titles {
+  margin: 1rem 0;
+}
+
+.link-titles a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 100px;
+}
+
+.cta-button {
+  margin-top: 100px;
+  display: inline-flex;
+  font-family: "SourceSansPro";
+  margin: 1rem 0;
+  padding: 0.8rem 2rem;
+  background-color: rgba(194, 113, 255, 1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.learn-statement {
+  font-family: "SourceSansPro";
+  font-size: 32px;
+  font-weight: lighter;
+  color: #ffffff;
+  margin-top: 130px;
+}
+
+.learn-statement .highlight {
+  color: rgba(194, 113, 255, 1); /* Change this color to match your design */
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.bold-text {
+  font-family: "SourceSansPro";
+  font-size: 18px;
+  font-weight: 900;
+  margin-left: 60px;
+  align-items: left;
+}
+
+.pro-section {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 275px;
+  text-align: center;
+}
+
+.pro-card {
+  text-align: center;
+  max-width: 200px;
+  color: #ffffff;
+  align-items: center;
+  margin-top: 20px;
+  display: block;
+}
+
+.pro-card img {
+  border-radius: 50%;
+  max-width: 150px;
+  align-items: center;
+  position: relative;
+}
+
+.pro-card p {
+  font-family: "SourceSansPro";
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.pro-card small {
+  font-family: "SourceSansPro";
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1;
+  font-style: italic;
+}
+
+.quote-section {
+  height: 392px; /* Set the height of the section */
+  display: flex; /* Enable flexbox for horizontal alignment */
+  align-items: center; /* Vertically center the items */
+  background-color: rgba(194, 113, 255, 1);
+  width: 1440px; /* Full width of the container */
+  background-repeat: no-repeat;
+  justify-content: center; /* Align items to the left */
+  color: #ffffff;
+  position: relative;
+  top: 65px;
+  flex-shrink: 0;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: #0c0c0c;
+  border-width: 2px;
+}
+
+blockquote {
+  font-family: "SourceSansPro";
+  font-weight: lighter;
+  font-size: 22px; /* Set the font size of the quote */
+  color: #ffffff; /* Set text color */
+}
+
+span {
+  font-family: "SourceSansPro";
+  margin-left: 45px;
+  font-weight: bold;
+  font-size: 22px; /* Set the font size of the quote */
+  color: #ffffff; /* Set text color */
+}
+
+small {
+  font-family: "SourceSansPro";
+  margin-left: 45px;
+  font-style: italic;
+  font-size: 22px; /* Set the font size of the quote */
+  color: #ffffff; /* Set text color */
+}
+
+.quote-content {
+  margin-left: 120px;
+  margin-right: 120px;
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Vertically align items */
+  text-align: left; /* Align text to the left */
+}
+
+.rating-icon {
+  width: 80px; /* Adjust the size of the rating icon */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits properly */
+}
+
+/* Video List Section Styling */
+.video-list-section {
+  height: 621px; /* Set section height */
+  background-color: #ffffff; /* Light gray background */
+  display: flex;
+  color: #0c0c0c;
+  width: 1440px;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  padding: 20px 40px;
+  position: relative;
+  top: 100px;
+  margin-top: 100px;
+}
+
+
+/* Section Styles */
+.video-section {
+  width: 1440px;
+  height: 600px;
+  background-size: cover;
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+  font-family: "SourceSansPro";
+  flex-direction: column;
+  
+}
+
+h2 {
+  font-family: "SourceSansPro";
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.highlight {
+  color: rgba(194, 113, 255, 1);
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+/* Video Container */
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Video Card */
+.video-card {
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 30px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.video-thumbnail {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-icon img {
+  width: 50px;
+}
+
+.video-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.video-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+/* Video Info */
+.video-info {
+  display: flex;
+  justify-content: left;
+  gap: 1px;
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+  align-items: center; /* Vertically align items */
+  text-align: left; 
+}
+
+.author-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.duration {
+  font-family: "SourceSansPro";
+  color: rgba(194, 113, 255, 1);
+  align-items: right;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.name {
+  color: rgba(194, 113, 255, 1);
+  font-family: "SourceSansPro";
+  font-size: 14px;
+  text-align: left; 
+  justify-content: left;
+  align-items: center;
+  margin-left: -40px;
+  margin-right: 40px;
+  padding-left: 45px; 
+}
+
+
+/* Membership Section Styling */
+.membership-section {
+  background-color: rgba(7, 22, 41, 1); /* Color extracted from the upload */
+  height: 502px;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.membership-section h2 {
+  font-family: "SourceSansPro";
+  font-size: 32px;
+  font-weight: lighter;
+  color: white;
+  margin-bottom: 50px;
+  margin-top: -10px;
+}
+
+.membership-section h2 .highlight {
+  font-family: "SourceSansPro";
+  color: #C271FF; /* Highlighted color */
+  font-weight: bold;
+  font-size: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Spacing between logo items */
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  max-width: 150px;
+}
+
+.logo-item img {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  margin-bottom: 10px;
+}
+
+.logo-item p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.register-button {
+  margin-top: 70px;
+  margin-bottom: -30px;
+  width: 162px;
+  height: 44px;
+  font-family: "SourceSansPro";
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #C271FF;
+  color: white;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.register-button:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+@media (max-width: 768px) {
+  .membership-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .logos-container {
+    gap: 40px;
+  }
+
+  .logo-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .register-button {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* FAQ Section Styling */
+.faq-section {
+  background-color: #ffffff; /* Matches the general background color */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 40px 20px;
+  width: 1440px;
+  position: relative;
+  box-sizing: border-box;
+  height: 856px; /* Fixed height for the section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+}
+
+.faq-section h2 {
+  font-family: "SourceSansPro";
+  font-weight: lighter;
+  font-size: 60px;
+  margin-top: -100px;
+  margin-bottom: 90px; /* Space between title and FAQ items */
+}
+
+.faq-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 150px; /* Adjust horizontal and vertical spacing */
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-item {
+  font-family: "SourceSansPro";
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  background-color: #fffefe; /* Slightly darker box for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item h3 {
+  font-family: "SourceSansPro";
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* Footer Section Styling */
+.footer {
+  background-color: rgba(7, 22, 41, 1); /* Dark background color */
+  color: white;
+  height: 249px; /* Fixed height for the footer */
+  display: flex;
+  width: 1440px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  position: relative;
+  flex-shrink: 0; /* Prevents the footer from shrinking */
+
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-logo img {
+  width: 169px;
+  margin-right: 10px; /* Space between logo icon and text */
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Spacing between logo items */
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.footer-icons img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  justify-content: center;
+}
+header, .hero, .video-list-section, .membership-section, .faq-section, .footer, .quote-section, .video-section, .banner-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 1440px;
+}
