@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Headphones </title>  
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav>
+            <label class="logo"> Allicom Travels </label>
+        <ul>
+            <li><a class="active" href=" ">Home</a></li>
+            <li><a href=" ">Services</a></li>
+            <li><a href=" ">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>TITLE </h1>
+    <p>lOREM KKHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHGGGGGGGGGGGGGGGGGGGG </p>
+
+    <button> 
+    <p> Content hgfghfttttttttttttttttttttttttttttttttttttttttttttttt</P>
+    
+
+    <footer> 
+    <p> </p>
+    </footer>
+    </body>
+    </html>
