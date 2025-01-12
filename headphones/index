@@ -8,21 +8,46 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     </head>
     <body>
+<header>
         <nav>
-            <label class="logo"> Allicom Travels </label>
+            <label class="logo"> <img src="favicon.png" alt="logo"> HEADPHONES </label>
         <ul>
-            <li><a class="active" href=" ">Home</a></li>
-            <li><a href=" ">Services</a></li>
-            <li><a href=" ">Contact</a></li>
+            <li><a class="active" href=" ">what we do </a></li>
+            <li><a href=" ">our result </a></li>
+            <li><a href=" ">contact us</a></li>
         </ul>
     </nav>
-    <h1>TITLE </h1>
+</header>
+<main>
+<section>
+<div>
+    <h1>Best  Headphones sellers in the world </h1>
     <p>lOREM KKHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHGGGGGGGGGGGGGGGGGGGG </p>
-
-    <button> 
+<br></br>
+    <button>Call To Action </button>
     <p> Content hgfghfttttttttttttttttttttttttttttttttttttttttttttttt</P>
-    
+</div>
+<div class="container">
+<div>
+<h2>What we do... </h2>
+<p>Description uiyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</p>
+</div>
+<div><img src=" " alt="Icon">
+<h3>Icon 1 </h3>
+<p> Description </p>
+</div>
+<div><img src=" " alt="Icon">
+<h3>Icon 2 </h3>
+<p> Description </p>
+</div>
+<div><img src=" " alt="Icon">
+<h3>Icon 3 </h3>
+<p> Description </p>
+</div>
+</div>
 
+ </section>   
+</maian>
     <footer> 
     <p> </p>
     </footer>
